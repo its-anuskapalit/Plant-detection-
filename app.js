@@ -306,7 +306,7 @@ const GardeningBot = ({ db, userId }) => {
       }
     };
     
-    const apiKey = ""; // Canvas will provide this at runtime
+    const apiKey = process.env.REACT_APP_GEMINI_API_KEY;// Canvas will provide this at runtime
     const apiUrl = `${API_URL_BASE}?key=${apiKey}`;
 
     const apiCall = async () => {
